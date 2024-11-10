@@ -1,0 +1,8 @@
+1. Convert colloquial title to offical title - Done
+2. Search indexes on prowlarr
+3. Pull proper film in highest resolution possible
+4. Download torrent
+5. Delete torrent
+6. Rename to proper title
+7. Transcode
+8. Move to proper library
