@@ -1,0 +1,47 @@
+2024-11-13 21:36:47,603 - INFO - === Starting New Processing Session ===
+2024-11-13 21:36:47,603 - INFO - Log file: logs/media_processor_20241113_213647.log
+2024-11-13 21:36:47,603 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:36:47,603 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:36:47,603 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:36:47,603 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:36:47,604 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:36:47,604 - INFO - Renaming: /Users/ofhd/Media/source/seven.mp4
+2024-11-13 21:36:47,965 - INFO - Successfully renamed and moved:
+seven.mp4 -> /Users/ofhd/Media/source/Seven Samurai (1954).mp4
+2024-11-13 21:36:47,965 - INFO - Renaming: /Users/ofhd/Media/source/jurassic world.mp4
+2024-11-13 21:36:48,180 - INFO - Successfully renamed and moved:
+jurassic world.mp4 -> /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:36:48,180 - INFO - Renaming: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:36:48,372 - ERROR - Could not get proper title for: s4e1
+2024-11-13 21:36:48,372 - ERROR - Failed to rename: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:36:48,372 - INFO - Renaming: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:36:48,567 - ERROR - Could not get proper title for: mrrobot season 1 episode 1
+2024-11-13 21:36:48,568 - ERROR - Failed to rename: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:36:48,568 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 21:36:48,568 - INFO - Transcoding: /Users/ofhd/Media/source/Seven Samurai (1954).mp4
+2024-11-13 21:36:48,568 - INFO - Input file: /Users/ofhd/Media/source/Seven Samurai (1954).mp4
+2024-11-13 21:36:48,568 - INFO - Output file: /Users/ofhd/Media/transcode/Seven Samurai (1954).mkv
+2024-11-13 21:36:48,568 - INFO - Starting transcode of: Seven Samurai (1954).mp4
+2024-11-13 21:36:48,568 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Seven Samurai (1954).mp4 --output /Users/ofhd/Media/transcode/Seven Samurai (1954).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:37:10,917 - INFO - Successfully transcoded: Seven Samurai (1954).mp4
+2024-11-13 21:37:10,917 - INFO - Transcoding: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:37:10,918 - INFO - Input file: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:37:10,918 - INFO - Output file: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:37:10,918 - INFO - Starting transcode of: Jurassic World (2015).mp4
+2024-11-13 21:37:10,918 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Jurassic World (2015).mp4 --output /Users/ofhd/Media/transcode/Jurassic World (2015).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:37:33,047 - INFO - Successfully transcoded: Jurassic World (2015).mp4
+2024-11-13 21:37:33,047 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 21:37:33,047 - INFO - Testing: /Users/ofhd/Media/transcode/Seven Samurai (1954).mkv
+2024-11-13 21:37:33,745 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Seven Samurai (1954).mkv
+2024-11-13 21:37:33,745 - INFO - Testing: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:37:34,365 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:37:34,365 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 21:37:34,365 - INFO - Moved Seven Samurai (1954).mkv to /Users/ofhd/Media/movies/Seven Samurai (1954).mkv
+2024-11-13 21:37:34,365 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Seven Samurai (1954).mp4
+2024-11-13 21:37:34,366 - INFO - Moved Jurassic World (2015).mkv to /Users/ofhd/Media/movies/Jurassic World (2015).mkv
+2024-11-13 21:37:34,366 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:37:34,366 - INFO - 
+=== Processing Complete ===

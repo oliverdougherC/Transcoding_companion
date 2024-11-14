@@ -1,0 +1,45 @@
+2024-11-13 21:40:23,651 - INFO - === Starting New Processing Session ===
+2024-11-13 21:40:23,652 - INFO - Log file: logs/media_processor_20241113_214023.log
+2024-11-13 21:40:23,652 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:40:23,652 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:40:23,652 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:40:23,652 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:40:23,652 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:40:23,652 - INFO - Renaming: /Users/ofhd/Media/source/Mr. Robot/Season 4/s4e1.mp4
+2024-11-13 21:40:23,652 - INFO - Extracted TV info - Show: Mr  Robot, Season: 04, Episode: 01
+2024-11-13 21:40:23,652 - INFO - Searching for TV show: Mr  Robot
+2024-11-13 21:40:23,867 - INFO - Successfully renamed and moved:
+s4e1.mp4 -> /Users/ofhd/Media/source/Mr. Robot/Season 4/Season 4/S04E01.mp4
+2024-11-13 21:40:23,867 - INFO - Renaming: /Users/ofhd/Media/source/Mr. Robot/Season 1/mrrobot season 1 episode 1.mp4
+2024-11-13 21:40:23,868 - INFO - Extracted TV info - Show: Mr  Robot, Season: 01, Episode: 01
+2024-11-13 21:40:23,868 - INFO - Searching for TV show: Mr  Robot
+2024-11-13 21:40:24,014 - INFO - Successfully renamed and moved:
+mrrobot season 1 episode 1.mp4 -> /Users/ofhd/Media/source/Mr. Robot/Season 1/Season 1/S01E01.mp4
+2024-11-13 21:40:24,014 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 21:40:24,014 - INFO - Transcoding: /Users/ofhd/Media/source/Mr. Robot/Season 4/Season 4/S04E01.mp4
+2024-11-13 21:40:24,014 - INFO - Input file: /Users/ofhd/Media/source/Mr. Robot/Season 4/Season 4/S04E01.mp4
+2024-11-13 21:40:24,014 - INFO - Output file: /Users/ofhd/Media/transcode/Mr. Robot/Season 4/Season 4/S04E01.mkv
+2024-11-13 21:40:24,014 - INFO - Starting transcode of: S04E01.mp4
+2024-11-13 21:40:24,014 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Mr. Robot/Season 4/Season 4/S04E01.mp4 --output /Users/ofhd/Media/transcode/Mr. Robot/Season 4/Season 4/S04E01.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:40:46,403 - INFO - Successfully transcoded: S04E01.mp4
+2024-11-13 21:40:46,403 - INFO - Transcoding: /Users/ofhd/Media/source/Mr. Robot/Season 1/Season 1/S01E01.mp4
+2024-11-13 21:40:46,403 - INFO - Input file: /Users/ofhd/Media/source/Mr. Robot/Season 1/Season 1/S01E01.mp4
+2024-11-13 21:40:46,403 - INFO - Output file: /Users/ofhd/Media/transcode/Mr. Robot/Season 1/Season 1/S01E01.mkv
+2024-11-13 21:40:46,403 - INFO - Starting transcode of: S01E01.mp4
+2024-11-13 21:40:46,403 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Mr. Robot/Season 1/Season 1/S01E01.mp4 --output /Users/ofhd/Media/transcode/Mr. Robot/Season 1/Season 1/S01E01.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:41:08,847 - INFO - Successfully transcoded: S01E01.mp4
+2024-11-13 21:41:08,848 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 21:41:08,848 - INFO - Testing: /Users/ofhd/Media/transcode/Mr. Robot/Season 4/Season 4/S04E01.mkv
+2024-11-13 21:41:09,472 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Mr. Robot/Season 4/Season 4/S04E01.mkv
+2024-11-13 21:41:09,472 - INFO - Testing: /Users/ofhd/Media/transcode/Mr. Robot/Season 1/Season 1/S01E01.mkv
+2024-11-13 21:41:10,090 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Mr. Robot/Season 1/Season 1/S01E01.mkv
+2024-11-13 21:41:10,090 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 21:41:10,090 - INFO - Moved S04E01.mkv to /Users/ofhd/Media/movies/S04E01.mkv
+2024-11-13 21:41:10,090 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Mr. Robot/Season 4/Season 4/S04E01.mp4
+2024-11-13 21:41:10,091 - INFO - Moved S01E01.mkv to /Users/ofhd/Media/movies/S01E01.mkv
+2024-11-13 21:41:10,091 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Mr. Robot/Season 1/Season 1/S01E01.mp4
+2024-11-13 21:41:10,091 - INFO - 
+=== Processing Complete ===

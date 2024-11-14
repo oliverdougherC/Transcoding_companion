@@ -1,0 +1,67 @@
+2024-11-13 19:53:44,417 - INFO - === Starting New Processing Session ===
+2024-11-13 19:53:44,417 - INFO - Log file: logs/media_processor_20241113_195344.log
+2024-11-13 19:53:44,418 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 19:53:44,418 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 19:53:44,418 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 19:53:44,418 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 19:53:44,418 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 19:53:44,418 - INFO - Renaming: /Users/ofhd/Media/source/jurassic park.MOV
+2024-11-13 19:53:44,692 - INFO - Successfully renamed and moved:
+jurassic park.MOV -> /Users/ofhd/Media/source/Jurassic Park (1993).MOV
+2024-11-13 19:53:44,692 - INFO - Renaming: /Users/ofhd/Media/source/1917.MOV
+2024-11-13 19:53:44,957 - INFO - Successfully renamed and moved:
+1917.MOV -> /Users/ofhd/Media/source/1917 (2019).MOV
+2024-11-13 19:53:44,957 - INFO - Renaming: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/breaking_bad_season2/seaon2episode1.MOV
+2024-11-13 19:53:45,613 - INFO - Successfully renamed and moved:
+seaon2episode1.MOV -> /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 2/S02E01.MOV
+2024-11-13 19:53:45,613 - INFO - Renaming: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking_Bad_S01/Breaking.bad.season1.E1.MOV
+2024-11-13 19:53:46,084 - INFO - Successfully renamed and moved:
+Breaking.bad.season1.E1.MOV -> /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 1/S01E01.MOV
+2024-11-13 19:53:46,084 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 19:53:46,084 - INFO - Transcoding: /Users/ofhd/Media/source/Jurassic Park (1993).MOV
+2024-11-13 19:53:46,084 - INFO - Input file: /Users/ofhd/Media/source/Jurassic Park (1993).MOV
+2024-11-13 19:53:46,084 - INFO - Output file: /Users/ofhd/Media/transcode/Jurassic Park (1993).mkv
+2024-11-13 19:53:46,084 - INFO - Starting transcode of: Jurassic Park (1993).MOV
+2024-11-13 19:53:46,084 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Jurassic Park (1993).MOV --output /Users/ofhd/Media/transcode/Jurassic Park (1993).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 20:05:04,269 - INFO - Successfully transcoded: Jurassic Park (1993).MOV
+2024-11-13 20:05:04,270 - INFO - Transcoding: /Users/ofhd/Media/source/1917 (2019).MOV
+2024-11-13 20:05:04,270 - INFO - Input file: /Users/ofhd/Media/source/1917 (2019).MOV
+2024-11-13 20:05:04,270 - INFO - Output file: /Users/ofhd/Media/transcode/1917 (2019).mkv
+2024-11-13 20:05:04,270 - INFO - Starting transcode of: 1917 (2019).MOV
+2024-11-13 20:05:04,270 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/1917 (2019).MOV --output /Users/ofhd/Media/transcode/1917 (2019).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 20:12:37,833 - INFO - Successfully transcoded: 1917 (2019).MOV
+2024-11-13 20:12:37,833 - INFO - Transcoding: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 2/S02E01.MOV
+2024-11-13 20:12:37,834 - INFO - Input file: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 2/S02E01.MOV
+2024-11-13 20:12:37,834 - INFO - Output file: /Users/ofhd/Media/transcode/S02E01.mkv
+2024-11-13 20:12:37,834 - INFO - Starting transcode of: S02E01.MOV
+2024-11-13 20:12:37,834 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 2/S02E01.MOV --output /Users/ofhd/Media/transcode/S02E01.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 20:20:24,031 - INFO - Successfully transcoded: S02E01.MOV
+2024-11-13 20:20:24,032 - INFO - Transcoding: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 1/S01E01.MOV
+2024-11-13 20:20:24,032 - INFO - Input file: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 1/S01E01.MOV
+2024-11-13 20:20:24,032 - INFO - Output file: /Users/ofhd/Media/transcode/S01E01.mkv
+2024-11-13 20:20:24,033 - INFO - Starting transcode of: S01E01.MOV
+2024-11-13 20:20:24,033 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 1/S01E01.MOV --output /Users/ofhd/Media/transcode/S01E01.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 20:28:04,816 - INFO - Successfully transcoded: S01E01.MOV
+2024-11-13 20:28:04,816 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 20:28:04,816 - INFO - Testing: /Users/ofhd/Media/transcode/Jurassic Park (1993).mkv
+2024-11-13 20:28:17,566 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Jurassic Park (1993).mkv
+2024-11-13 20:28:17,566 - INFO - Testing: /Users/ofhd/Media/transcode/1917 (2019).mkv
+2024-11-13 20:28:29,962 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/1917 (2019).mkv
+2024-11-13 20:28:29,962 - INFO - Testing: /Users/ofhd/Media/transcode/S02E01.mkv
+2024-11-13 20:28:42,415 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/S02E01.mkv
+2024-11-13 20:28:42,415 - INFO - Testing: /Users/ofhd/Media/transcode/S01E01.mkv
+2024-11-13 20:28:54,801 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/S01E01.mkv
+2024-11-13 20:28:54,801 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 20:28:54,802 - INFO - Moved Jurassic Park (1993).mkv to /Users/ofhd/Media/movies/Jurassic Park (1993).mkv
+2024-11-13 20:28:54,803 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Jurassic Park (1993).MOV
+2024-11-13 20:28:54,803 - INFO - Moved 1917 (2019).mkv to /Users/ofhd/Media/movies/1917 (2019).mkv
+2024-11-13 20:28:54,804 - INFO - Cleaned up source file: /Users/ofhd/Media/source/1917 (2019).MOV
+2024-11-13 20:28:54,804 - INFO - Moved S02E01.mkv to /Users/ofhd/Media/movies/S02E01.mkv
+2024-11-13 20:28:54,804 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 2/S02E01.MOV
+2024-11-13 20:28:54,804 - INFO - Moved S01E01.mkv to /Users/ofhd/Media/movies/S01E01.mkv
+2024-11-13 20:28:54,805 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking Bad (2024)/Season 1/S01E01.MOV
+2024-11-13 20:28:54,806 - INFO - 
+=== Processing Complete ===

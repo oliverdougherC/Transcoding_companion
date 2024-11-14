@@ -5,59 +5,68 @@ import os
 from dotenv import load_dotenv
 import sys
 import re
+import logging
 
-def get_proper_title(colloquial_title):
+def get_proper_title(colloquial_title, is_tv=False):
     """
-    Convert a colloquial movie title to proper format with year using OMDb API
+    Convert a colloquial title to proper format with year using OMDb API
     Args:
-        colloquial_title (str): Informal movie title
+        colloquial_title (str): Informal title
+        is_tv (bool): Whether this is a TV show
     Returns:
-        str: Formatted title as "Movie Title (Year)" or None if not found
+        str: Formatted title with year or None if not found
     """
     load_dotenv()
     api_key = os.getenv('OMDB_API_KEY')
     
     if not api_key:
-        raise ValueError("OMDB_API_KEY not found in environment variables")
+        logging.error("OMDB_API_KEY not found in environment variables")
+        return None
     
-    # Clean up the title before querying
-    clean_title = colloquial_title.replace('.', ' ').replace('(', '').replace(')', '')
+    # Clean up the title
+    clean_title = re.sub(r'[._]', ' ', colloquial_title)
+    clean_title = re.sub(r'\s+', ' ', clean_title).strip()
     
-    # Find all years in the string
-    year_matches = list(re.finditer(r'\b(19|20)\d{2}\b', clean_title))
+    # Remove season/episode information for TV shows
+    if is_tv:
+        clean_title = re.sub(r'[Ss](?:eason)?\s*\d+.*', '', clean_title)
+        clean_title = re.sub(r'[Ee](?:pisode)?\s*\d+.*', '', clean_title)
+        clean_title = re.sub(r'\d+x\d+.*', '', clean_title)
     
-    if year_matches:
-        # Take the last year found as the release year
-        release_year = year_matches[-1].group(0)
-        # Keep everything before any additional content after the release year
-        clean_title = clean_title[:year_matches[-1].start()].strip()
-        
-        # If there are other years in the title, preserve them
-        for match in year_matches[:-1]:
-            year_in_title = match.group(0)
-            if year_in_title in clean_title:
-                clean_title = clean_title  # Keep the year if it's part of the title
+    # Special handling for numeric titles
+    if clean_title.isdigit():
+        search_title = clean_title
+    else:
+        # Extract year if present
+        year_match = re.search(r'\b(19|20)\d{2}\b', clean_title)
+        if year_match:
+            year = year_match.group(0)
+            clean_title = clean_title[:year_match.start()].strip()
+        search_title = clean_title
+
+    logging.info(f"Searching OMDB for title: {search_title}")
     
     # Prepare the API request
-    url = f"http://www.omdbapi.com/?t={clean_title}&apikey={api_key}"
+    url = f"http://www.omdbapi.com/?t={search_title}&type={'series' if is_tv else 'movie'}&apikey={api_key}"
     
     try:
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
         
+        logging.info(f"OMDB response: {data}")
+        
         if data.get('Response') == 'True':
-            # Clean the title by removing any trailing year in parentheses
             title = data.get('Title')
-            if '(' in title:
-                title = title.split('(')[0].strip()
-            year = data.get('Year')
+            year = data.get('Year', '').split('–')[0]  # Get first year for TV series
             return f"{title} ({year})"
         else:
+            logging.error(f"Title not found in OMDB: {search_title}")
+            logging.error(f"OMDB error message: {data.get('Error')}")
             return None
             
     except requests.RequestException as e:
-        print(f"Error fetching data from OMDb: {e}")
+        logging.error(f"Error fetching data from OMDb: {e}")
         return None
 
 if __name__ == "__main__":

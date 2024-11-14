@@ -1,0 +1,59 @@
+2024-11-13 21:48:25,823 - INFO - === Starting New Processing Session ===
+2024-11-13 21:48:25,823 - INFO - Log file: logs/media_processor_20241113_214825.log
+2024-11-13 21:48:25,823 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:48:25,824 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:48:25,824 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:48:25,824 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:48:25,824 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:48:25,824 - INFO - Processing: /Users/ofhd/Media/source/seven.mp4
+2024-11-13 21:48:25,824 - INFO - Processing: /Users/ofhd/Media/source/jurassic world.mp4
+2024-11-13 21:48:25,824 - INFO - Processing: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:48:25,824 - INFO - Processing: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:48:25,824 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 21:48:25,824 - INFO - Transcoding: /Users/ofhd/Media/source/seven.mp4 -> /Users/ofhd/Media/transcode/seven.mkv
+2024-11-13 21:48:25,824 - INFO - Input file: /Users/ofhd/Media/source/seven.mp4
+2024-11-13 21:48:25,824 - INFO - Output file: /Users/ofhd/Media/transcode/seven.mkv
+2024-11-13 21:48:25,824 - INFO - Starting transcode of: seven.mp4
+2024-11-13 21:48:25,824 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/seven.mp4 --output /Users/ofhd/Media/transcode/seven.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:48:47,930 - INFO - Successfully transcoded: seven.mp4
+2024-11-13 21:48:47,930 - INFO - Transcoding: /Users/ofhd/Media/source/jurassic world.mp4 -> /Users/ofhd/Media/transcode/jurassic world.mkv
+2024-11-13 21:48:47,931 - INFO - Input file: /Users/ofhd/Media/source/jurassic world.mp4
+2024-11-13 21:48:47,931 - INFO - Output file: /Users/ofhd/Media/transcode/jurassic world.mkv
+2024-11-13 21:48:47,931 - INFO - Starting transcode of: jurassic world.mp4
+2024-11-13 21:48:47,931 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/jurassic world.mp4 --output /Users/ofhd/Media/transcode/jurassic world.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:49:10,068 - INFO - Successfully transcoded: jurassic world.mp4
+2024-11-13 21:49:10,068 - INFO - Transcoding: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4 -> /Users/ofhd/Media/transcode/s4e1.mkv
+2024-11-13 21:49:10,068 - INFO - Input file: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:49:10,069 - INFO - Output file: /Users/ofhd/Media/transcode/s4e1.mkv
+2024-11-13 21:49:10,069 - INFO - Starting transcode of: s4e1.mp4
+2024-11-13 21:49:10,069 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4 --output /Users/ofhd/Media/transcode/s4e1.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:49:32,500 - INFO - Successfully transcoded: s4e1.mp4
+2024-11-13 21:49:32,501 - INFO - Transcoding: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4 -> /Users/ofhd/Media/transcode/mrrobot season 1 episode 1.mkv
+2024-11-13 21:49:32,501 - INFO - Input file: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:49:32,501 - INFO - Output file: /Users/ofhd/Media/transcode/mrrobot season 1 episode 1.mkv
+2024-11-13 21:49:32,501 - INFO - Starting transcode of: mrrobot season 1 episode 1.mp4
+2024-11-13 21:49:32,501 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4 --output /Users/ofhd/Media/transcode/mrrobot season 1 episode 1.mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:49:55,260 - INFO - Successfully transcoded: mrrobot season 1 episode 1.mp4
+2024-11-13 21:49:55,261 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 21:49:55,261 - INFO - Testing: /Users/ofhd/Media/transcode/seven.mkv
+2024-11-13 21:49:55,888 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/seven.mkv
+2024-11-13 21:49:55,888 - INFO - Testing: /Users/ofhd/Media/transcode/jurassic world.mkv
+2024-11-13 21:49:56,509 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/jurassic world.mkv
+2024-11-13 21:49:56,509 - INFO - Testing: /Users/ofhd/Media/transcode/s4e1.mkv
+2024-11-13 21:49:57,127 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/s4e1.mkv
+2024-11-13 21:49:57,127 - INFO - Testing: /Users/ofhd/Media/transcode/mrrobot season 1 episode 1.mkv
+2024-11-13 21:49:57,744 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/mrrobot season 1 episode 1.mkv
+2024-11-13 21:49:57,744 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 21:49:57,745 - INFO - Moved seven.mkv to /Users/ofhd/Media/movies/seven.mkv
+2024-11-13 21:49:57,745 - INFO - Cleaned up source file: /Users/ofhd/Media/source/seven.mp4
+2024-11-13 21:49:57,745 - INFO - Moved jurassic world.mkv to /Users/ofhd/Media/movies/jurassic world.mkv
+2024-11-13 21:49:57,745 - INFO - Cleaned up source file: /Users/ofhd/Media/source/jurassic world.mp4
+2024-11-13 21:49:57,745 - INFO - Moved s4e1.mkv to /Users/ofhd/Media/movies/s4e1.mkv
+2024-11-13 21:49:57,745 - INFO - Cleaned up source file: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:49:57,745 - INFO - Moved mrrobot season 1 episode 1.mkv to /Users/ofhd/Media/movies/mrrobot season 1 episode 1.mkv
+2024-11-13 21:49:57,746 - INFO - Cleaned up source file: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:49:57,746 - INFO - 
+=== Processing Complete ===

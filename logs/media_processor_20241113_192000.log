@@ -1,0 +1,35 @@
+2024-11-13 19:20:00,171 - INFO - === Starting New Processing Session ===
+2024-11-13 19:20:00,171 - INFO - Log file: logs/media_processor_20241113_192000.log
+2024-11-13 19:20:00,171 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 19:20:00,171 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 19:20:00,171 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 19:20:00,171 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 19:20:00,171 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 19:20:00,171 - INFO - Renaming: /Users/ofhd/Media/source/a.quiet.place.MOV
+2024-11-13 19:20:00,427 - INFO - Successfully renamed:
+a.quiet.place.MOV -> A Quiet Place (2018).MOV
+2024-11-13 19:20:00,427 - INFO - Renaming: /Users/ofhd/Media/source/1917.MOV
+2024-11-13 19:20:00,547 - ERROR - Could not get proper title for: 1917
+2024-11-13 19:20:00,547 - ERROR - Failed to rename: /Users/ofhd/Media/source/1917.MOV
+2024-11-13 19:20:00,548 - INFO - Renaming: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/breaking_bad_season2/seaon2episode1.MOV
+2024-11-13 19:20:00,670 - ERROR - Could not get proper title for: seaon2episode1
+2024-11-13 19:20:00,670 - ERROR - Failed to rename: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/breaking_bad_season2/seaon2episode1.MOV
+2024-11-13 19:20:00,670 - INFO - Renaming: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking_Bad_S01/Breaking.bad.season1.E1.MOV
+2024-11-13 19:20:00,781 - ERROR - Could not get proper title for: Breaking.bad.season1.E1
+2024-11-13 19:20:00,781 - ERROR - Failed to rename: /Users/ofhd/Media/source/Breaking_Bad_S01-S05/Breaking_Bad_S01/Breaking.bad.season1.E1.MOV
+2024-11-13 19:20:00,781 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 19:20:00,781 - INFO - Transcoding: /Users/ofhd/Media/source/A Quiet Place (2018).MOV
+2024-11-13 19:20:00,781 - INFO - Input file: /Users/ofhd/Media/source/A Quiet Place (2018).MOV
+2024-11-13 19:20:00,781 - INFO - Output file: /Users/ofhd/Media/transcode/A Quiet Place (2018).mkv
+2024-11-13 19:20:00,782 - INFO - Starting transcode of: A Quiet Place (2018).MOV
+2024-11-13 19:20:00,782 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/A Quiet Place (2018).MOV --output /Users/ofhd/Media/transcode/A Quiet Place (2018).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 19:28:20,296 - INFO - Successfully transcoded: A Quiet Place (2018).MOV
+2024-11-13 19:28:20,297 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 19:28:20,297 - INFO - Testing: /Users/ofhd/Media/transcode/A Quiet Place (2018).mkv
+2024-11-13 19:28:32,793 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/A Quiet Place (2018).mkv
+2024-11-13 19:28:32,793 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 19:28:32,793 - INFO - Moved A Quiet Place (2018).mkv to /Users/ofhd/Media/movies/A Quiet Place (2018).mkv
+2024-11-13 19:28:32,793 - ERROR - Fatal error: 'str' object has no attribute 'stem'

@@ -1,0 +1,9 @@
+2024-11-13 21:39:49,523 - INFO - === Starting New Processing Session ===
+2024-11-13 21:39:49,523 - INFO - Log file: logs/media_processor_20241113_213949.log
+2024-11-13 21:39:49,523 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:39:49,523 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:39:49,523 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:39:49,523 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:39:49,524 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:39:49,524 - INFO - Renaming: /Users/ofhd/Media/source/Mr. Robot/Season 4/s4e1.mp4
+2024-11-13 21:39:49,524 - ERROR - Fatal error: 'PosixPath' object has no attribute 'lower'

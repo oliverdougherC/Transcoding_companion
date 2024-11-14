@@ -1,0 +1,55 @@
+2024-11-13 21:45:21,268 - INFO - === Starting New Processing Session ===
+2024-11-13 21:45:21,268 - INFO - Log file: logs/media_processor_20241113_214521.log
+2024-11-13 21:45:21,268 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:45:21,268 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:45:21,268 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:45:21,268 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:45:21,269 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:45:21,269 - INFO - Renaming: /Users/ofhd/Media/source/jurassic world.mp4
+2024-11-13 21:45:21,269 - INFO - Extracted TV info - Show: None, Season: None, Episode: None
+2024-11-13 21:45:21,269 - INFO - Searching for movie: jurassic world
+2024-11-13 21:45:22,054 - INFO - Successfully renamed and moved:
+jurassic world.mp4 -> /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:45:22,054 - INFO - Renaming: /Users/ofhd/Media/source/se7en.mp4
+2024-11-13 21:45:22,055 - INFO - Extracted TV info - Show: None, Season: None, Episode: 07
+2024-11-13 21:45:22,055 - INFO - Searching for movie: se7en
+2024-11-13 21:45:22,509 - INFO - Successfully renamed and moved:
+se7en.mp4 -> /Users/ofhd/Media/source/Se7en (1995).mp4
+2024-11-13 21:45:22,509 - INFO - Renaming: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:45:22,510 - INFO - Extracted TV info - Show: None, Season: 04, Episode: 01
+2024-11-13 21:45:22,510 - INFO - Searching for movie: s4e1
+2024-11-13 21:45:22,649 - ERROR - Could not get proper title for: s4e1
+2024-11-13 21:45:22,649 - ERROR - Failed to rename: /Users/ofhd/Media/source/mr robot/s04/s4e1.mp4
+2024-11-13 21:45:22,650 - INFO - Renaming: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:45:22,650 - INFO - Extracted TV info - Show: mrrobot, Season: 01, Episode: 01
+2024-11-13 21:45:22,650 - INFO - Searching for TV show: mrrobot
+2024-11-13 21:45:23,006 - ERROR - Could not get proper title for: mrrobot
+2024-11-13 21:45:23,007 - ERROR - Failed to rename: /Users/ofhd/Media/source/mr robot/s01/mrrobot season 1 episode 1.mp4
+2024-11-13 21:45:23,007 - INFO - 
+=== Stage 2: Transcoding Files ===
+2024-11-13 21:45:23,007 - INFO - Transcoding: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:45:23,007 - INFO - Input file: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:45:23,007 - INFO - Output file: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:45:23,007 - INFO - Starting transcode of: Jurassic World (2015).mp4
+2024-11-13 21:45:23,007 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Jurassic World (2015).mp4 --output /Users/ofhd/Media/transcode/Jurassic World (2015).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:45:45,450 - INFO - Successfully transcoded: Jurassic World (2015).mp4
+2024-11-13 21:45:45,450 - INFO - Transcoding: /Users/ofhd/Media/source/Se7en (1995).mp4
+2024-11-13 21:45:45,450 - INFO - Input file: /Users/ofhd/Media/source/Se7en (1995).mp4
+2024-11-13 21:45:45,450 - INFO - Output file: /Users/ofhd/Media/transcode/Se7en (1995).mkv
+2024-11-13 21:45:45,450 - INFO - Starting transcode of: Se7en (1995).mp4
+2024-11-13 21:45:45,450 - INFO - Command: HandBrakeCLI --input /Users/ofhd/Media/source/Se7en (1995).mp4 --output /Users/ofhd/Media/transcode/Se7en (1995).mkv --preset-import-file /Users/ofhd/Documents/Cursor/Transcoding_companion/presets/CPU_Encode.json --preset CPU_AV1 --format av_mkv --markers --optimize --all-audio --all-subtitles
+2024-11-13 21:46:07,871 - INFO - Successfully transcoded: Se7en (1995).mp4
+2024-11-13 21:46:07,871 - INFO - 
+=== Stage 3: Testing Files ===
+2024-11-13 21:46:07,871 - INFO - Testing: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:46:08,498 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Jurassic World (2015).mkv
+2024-11-13 21:46:08,498 - INFO - Testing: /Users/ofhd/Media/transcode/Se7en (1995).mkv
+2024-11-13 21:46:09,120 - INFO - All quality tests passed: /Users/ofhd/Media/transcode/Se7en (1995).mkv
+2024-11-13 21:46:09,121 - INFO - 
+=== Stage 4: Moving Files to Final Destination ===
+2024-11-13 21:46:09,121 - INFO - Moved Jurassic World (2015).mkv to /Users/ofhd/Media/movies/Jurassic World (2015).mkv
+2024-11-13 21:46:09,121 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Jurassic World (2015).mp4
+2024-11-13 21:46:09,121 - INFO - Moved Se7en (1995).mkv to /Users/ofhd/Media/movies/Se7en (1995).mkv
+2024-11-13 21:46:09,121 - INFO - Cleaned up source file: /Users/ofhd/Media/source/Se7en (1995).mp4
+2024-11-13 21:46:09,121 - INFO - 
+=== Processing Complete ===

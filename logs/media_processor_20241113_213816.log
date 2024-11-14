@@ -1,0 +1,14 @@
+2024-11-13 21:38:16,789 - INFO - === Starting New Processing Session ===
+2024-11-13 21:38:16,789 - INFO - Log file: logs/media_processor_20241113_213816.log
+2024-11-13 21:38:16,789 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:38:16,789 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:38:16,789 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:38:16,789 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:38:16,789 - INFO - === Stage 1: Renaming Files ===
+2024-11-13 21:38:16,789 - INFO - Renaming: /Users/ofhd/Media/source/Mr. Robot/Season 4/s4e1.mp4
+2024-11-13 21:38:17,022 - ERROR - Could not get proper title for: s4e1
+2024-11-13 21:38:17,023 - ERROR - Failed to rename: /Users/ofhd/Media/source/Mr. Robot/Season 4/s4e1.mp4
+2024-11-13 21:38:17,023 - INFO - Renaming: /Users/ofhd/Media/source/Mr. Robot/Season 1/mrrobot season 1 episode 1.mp4
+2024-11-13 21:38:17,166 - ERROR - Could not get proper title for: mrrobot season 1 episode 1
+2024-11-13 21:38:17,166 - ERROR - Failed to rename: /Users/ofhd/Media/source/Mr. Robot/Season 1/mrrobot season 1 episode 1.mp4
+2024-11-13 21:38:17,166 - ERROR - No files were successfully renamed. Stopping process.

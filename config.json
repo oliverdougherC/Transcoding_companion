@@ -1,0 +1,7 @@
+{
+    "source_directory": "/Users/ofhd/Media/source",
+    "transcode_directory": "/Users/ofhd/Media/transcode",
+    "movies_directory": "/Users/ofhd/Media/movies",
+    "tv_directory": "/Users/ofhd/Media/tv",
+    "preset": "presets/CPU_Encode.json"
+}

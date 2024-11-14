@@ -1,0 +1,7 @@
+2024-11-13 21:36:09,814 - INFO - === Starting New Processing Session ===
+2024-11-13 21:36:09,815 - INFO - Log file: logs/media_processor_20241113_213609.log
+2024-11-13 21:36:09,815 - INFO - Created/verified directory: /Users/ofhd/Media/source
+2024-11-13 21:36:09,815 - INFO - Created/verified directory: /Users/ofhd/Media/transcode
+2024-11-13 21:36:09,815 - INFO - Created/verified directory: /Users/ofhd/Media/movies
+2024-11-13 21:36:09,815 - INFO - Created/verified directory: /Users/ofhd/Media/tv
+2024-11-13 21:36:09,815 - INFO - No new files to process
